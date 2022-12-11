@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Space Ghost | Início</title>
+	<meta name="description" content="A shading effect for 3D transformed elements" />
+	<meta name="keywords" content="css3, transforms, shadow, shading, 3d, box shadow" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+
+	<style>
+		
+
+		#menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #313131;
+			color: #f1f1f1;
+			overflow: hidden;
+			display: flex;
+			
+		}
+
+		li {
+			font-weight: bold;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			float: left;
+		}
+
+		li a {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 20px 20px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: gray;
+			transition: 0.5s;
+		}
+
+
+		h1 {
+			font-weight: bold;
+			font-size: medium;
+			font-style: italic;
+			font-family: Arial, Helvetica, sans-serif;
+			text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
+		}
+
+		footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #111;
+			width: 100%;
+			height: 45px;
+		}
+
+		.adriano {
+			color: #f1f1f1;
+			position: relative;
+			font-size: 24px;
+			color: #313131;
+		}
+
+		.adriano::before {
+			content: attr(data-text);
+			position: absolute;
+			color: #f1f1f1;
+			width: 100px;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right: 2.5px solid #fff;
+			animation: animarElemento 5s linear infinite;
+			filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 10px #fff);
+		}
+
+		@keyframes animarElemento {
+
+			0%,
+			10%,
+			100% {
+				width: 0;
+			}
+
+			70%,
+			90% {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<ul id="menu">
+		<li><a href="../template1/index.html">Home</a></li>
+		<li><a href="../template2/index4.html">Personagens</a></li>
+		<li><a href="../template3/index4.html">Curiosidades</a></li>
+	</ul>
+
+
+
+	<div class="container">
+			<!-- Top Navigation -->
+			<header>
+				<h1>Space Ghost <span>Um Herói Espacial</span></h1>  
+			</header>
+			<div class="wrapper">
+				<ul class="stage clearfix">
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>História</h1>
+									<span class="year">1966</span>
+								</header>
+								<p>
+									Space Ghost é uma série animada televisiva dos estúdios Hanna-Barbera, produzida originalmente entre 1966 e 1968, que narra as aventuras de um super-herói que combatia vilões espaciais, com ajuda de seus parceiros adolescentes, Jan e Jace e seu mascote, o macaco Blip.
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Enredo</h1>
+									<span class="year">1966</span>
+								</header>
+								<p>
+									 o policial interplanetário Thaddeus Bach é traído por seus superiores e abandonado para morrer num planeta distante. Claro, ele é salvo pelo alienígena local, que lhe dá uma razão para viver e lhe revela a tecnologia local desconhecida: um par de braceletes poderosíssimos e uma nave superavançada, o "Cruzador Fantasma". Armado até os dentes, o revigorado Bach assume o nome "Space Ghost" e vai atrás de seus algozes. Mas antes, recruta dois orfãos alienígenas, Jan e Jace.
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Episódios</h1>
+									<span class="year">1966</span>
+								</header>
+								<p>
+									Space Ghost e Dino Boy foi uma série que durou apenas 20 episódios na CBS em 1966 e 1967. Ela foi criada por Alex Toth, um cartunista que não se importava com o projeto Space Ghost. Mesmo com esse material limitado, o animador C. Martin Croker ainda conseguiu só precisar fazer cinco novas peças de animação pro primeiro episódio do Space Ghost Costa a Costa, tirando o resto da animação original.
+								</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div><!-- /wrapper -->
+		</div><!-- /container -->
+	<footer>
+		<p data-text="&nbsp; Adriano Ramos De Melo - Copyright © 2021 Codrops &nbsp;"
+			class="adriano">&nbsp; Adriano Ramos De Melo - Copyright © 2021 Codrops &nbsp;</p>
+	</footer>
+
+
+</body>
+
+</html>

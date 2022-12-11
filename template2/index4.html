@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceGhost | Heróis</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr.custom.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #fbc73b;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #313131;
+      color: #f1f1f1;
+      overflow: hidden;
+      display: flex; 
+    }
+
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: #f1f1f1;
+      background-color: gray;
+      transition: 0.5s;
+    }
+
+    li {
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h1 {
+      color: #f1f1f1;
+      font-weight: bold;
+      font-size: medium;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
+    }
+
+    footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #111;
+			width: 100%;
+			height: 45px;
+		}
+    .adriano {
+      color: #f1f1f1;
+      position: relative;
+      font-size: 24px;
+      color: #313131;
+    }
+
+    .adriano::before {
+      content: attr(data-text);
+      position: absolute;
+      color: #f1f1f1;
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2.5px solid #fff;
+      animation: animarElemento 5s linear infinite;
+      filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 10px #fff);
+    }
+
+    @keyframes animarElemento {
+
+      0%,
+      10%,
+      100% {
+        width: 0;
+      }
+
+      70%,
+      90% {
+        width: 100%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container demo-3">
+
+    <ul id="menu">
+      <li><a href="../template1/index.html"> Home</a></li>
+      <li><a href="../template3/index4.html">Curiosidades</a></li>
+    </ul>
+    <!-- Top Navigation -->
+    <header>
+      <h1>Personagens</h1>
+    </header>
+
+    <div id="alinhamento">
+
+      <ul class="grid cs-style-4">
+        <li>
+          <figure>
+            <div>
+              <img src="images/spaceghost.jpg" width="400px" height="300px" alt="SpaceGhost" />
+            </div>
+            <figcaption>
+              <h3>Space Ghost</h3>
+              <p>Protagonista</p>
+              <p> Space Ghost é o personagem titular e protagonista da franquia Space Ghost, aparecendo em todas as
+                iterações.
+              </p>
+              <a target="_blank" href="https://spaceghost.fandom.com/wiki/Space_Ghost">Saiba Mais</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <div>
+              <img src="images/vilon.jpg" width="400px" height="300px" alt="Creature_King" />
+            </div>
+            <figcaption>
+              <h3>Creature King</h3>
+              <p>Vilão</p>
+              <p>
+                O Rei das Criaturas era um dos vilões do Space Ghost. Ele usou
+                um capacete de controle mental para controlar as mentes dos
+                animais espaciais.
+              </p>
+
+              <a target="_blank" href="https://spaceghost.fandom.com/wiki/Creature_King">Saiba Mais</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <div>
+              <img src="images/jan.jpg" width="400px" height="300px" alt="Jan" />
+            </div>
+            <figcaption>
+              <h3>Jan</h3>
+              <p>Herói</p>
+              <p>
+                Jan Hunter foi um dos ajudantes do Space Ghost durante suas
+                primeiras aventuras, junto com seu irmão gêmeo Jace e seu macaco
+                Blip.
+              </p>
+              <a target="_blank" href="https://spaceghost.fandom.com/wiki/Jan">Saiba Mais</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <div>
+              <img src="images/Jace.jpg" width="400px" height="300px" alt="Jace" />
+            </div>
+            <figcaption>
+              <h3>Jace</h3>
+              <p>Herói</p>
+              <p>
+                Jace Hunter foi um dos ajudantes do Space Ghost durante seu
+                tempo como super-herói, junto com sua irmã gêmea Jan e seu
+                macaco de estimação Blip.
+              </p>
+              <a target="_blank" href="https://spaceghost.fandom.com/wiki/Jace">Saiba Mais</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <div>
+              <img src="images/zorak.png" width="400px" height="300px" alt="Zorak" />
+            </div>
+            <figcaption>
+              <h3>Zorak</h3>
+              <p>Vilão</p>
+              <p>
+                Zorak é um Dokarian, também conhecido como um gigante espaço
+                mantis. Zorak era o líder de um exército de guerreiros espaciais
+                chamado Zorathian.
+              </p>
+              <a target="_blank" href="https://spaceghost.fandom.com/wiki/Zorak">Saiba Mais</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <div><img src="images/metallus.jpg" width="400px" height="300px" alt="Metallus" /></div>
+            <figcaption>
+              <h3>Metallus</h3>
+              <p>Vilão</p>
+              <p>
+                Metallus é um vilão e membro do Council of Doom que apareceu nas
+                séries animadas Space Ghost e Space Ghost Coast to Coast.
+              </p>
+              <a target="_blank" href="https://spaceghost.fandom.com/wiki/Metallus">Saiba Mais</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p data-text="&nbsp; Adriano Ramos De Melo - Copyright © 2021 Codrops &nbsp;"
+      class="adriano">&nbsp; Adriano Ramos De Melo - Copyright © 2021 Codrops &nbsp;</p>
+  </footer>
+  <!-- /container -->
+  <script src="js/toucheffects.js"></script>
+</body>
+
+</html>

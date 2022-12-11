@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Space Ghost | Curiosidades</title>
+        <meta name="description" content="Circle Hover Effects with CSS Transitions" />
+        <meta name="keywords" content="circle, border-radius, hover, css3, transition, image, thumbnail, effect, 3d" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+    <style>
+      * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #fbc73b;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #313131;
+      color: #f1f1f1;
+      overflow: hidden;
+      display: flex;
+
+    }
+
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: #f1f1f1;
+      background-color: gray;
+      transition: 0.5s;
+    }
+
+    li {
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h1 {
+      color: #f1f1f1;
+      font-weight: bold;
+      font-size: medium;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+      footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #111;
+			width: 100%;
+			height: 45px;
+      margin-top: 20%;
+		}
+    .adriano {
+      color: #f1f1f1;
+      position: relative;
+      font-size: 24px;
+      color: #313131;
+    }
+
+    .adriano::before {
+      content: attr(data-text);
+      position: absolute;
+      color: #f1f1f1;
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2.5px solid #fff;
+      animation: animarElemento 5s linear infinite;
+      filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 10px #fff);
+    }
+
+    @keyframes animarElemento {
+
+      0%,
+      10%,
+      100% {
+        width: 0;
+      }
+
+      70%,
+      90% {
+        width: 100%;
+      }
+    }
+     #Curiosidades{
+      color: #f1f1f1;
+      font-weight: bold;
+      font-size: 32px;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+
+          <ul id="menu">
+            <li><a href="../template1/index.html"> Home</a></li>
+            <li><a href="../template2/index4.html">Personagens</a></li>
+          </ul>
+		
+			<!-- Codrops top bar -->
+
+			<header>
+			
+				<h1 id="Curiosidades">Curiosidades</h1>
+
+			
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<section class="main">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">
+							<div class="ch-info">
+								<h3>As novas animações foram feitas de forma propositalmente arcaicas</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info">
+								<h3>A NASA nomeou rochas em Marte em homenagem aos personagens</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info">
+								<h3>O animador se tornou a voz do Zorak ao impressionar o chefe com sua performance</h3>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				
+			</section>
+        </div>
+
+       <footer>
+    <p data-text="&nbsp; Adriano Ramos De Melo - Copyright © 2021 Codrops &nbsp;"
+      class="adriano">&nbsp; Adriano Ramos De Melo - Copyright © 2021 Codrops &nbsp;</p>
+  </footer>
+    </body>
+</html>
